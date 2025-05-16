@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "PoW Solver",
+    "version": "1.0",
+    "description": "Computes proof-of-work challenges using SHA-256.",
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "background": {
+      "service_worker": "background.js",
+      "type": "module"
+    },
+    "permissions": ["storage"]
+  }
+  

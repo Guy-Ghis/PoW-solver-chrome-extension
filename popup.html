@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>PoW Solver</title>
+  <style>
+    body { font-family: sans-serif; padding: 10px; }
+    input { margin: 5px 0; }
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 4px;
+    }
+    table { width: 100%; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h1>Proof of Work Chrome Extension</h1>
+  Challenge: <input id="challenge" type="text" placeholder="Enter challenge"><br>
+  Difficulty: <input id="difficulty" type="number" value="1" min="1"><br>
+  <button id="start">Compute PoW</button>
+  <button id="clear">Clear History</button><br>
+  <div>Attempts: <span id="count">0</span></div>
+  <div>Result: <span id="result"></span></div>
+
+  <h2>History</h2>
+  <table id="history">
+    <tr><th>Chal.</th><th>Nonce</th><th>Hash</th><th>Time</th></tr>
+  </table>
+
+  <script src="popup.js"></script>
+</body>
+</html>
